@@ -1,0 +1,95 @@
+:root {
+    --blue_colour: #123f59;
+    --gray_colour: #e8eef1
+}
+
+.LandingPageNavbar {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    z-index: 10000;
+    background: #fff;
+    box-shadow: 0 2px 14px #0001;
+    align-items: center;
+    padding: 5px 24px
+}
+
+.LandingPageNavbar-sec1 {
+    width: 21%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    text-decoration: none
+}
+
+.logo1 {
+    width: 42px;
+    height: 55px;
+    object-fit: contain
+}
+
+.logo2 {
+    width: 150px;
+    height: 55px;
+    object-fit: contain
+}
+
+.LandingPageNavbar-sec2 {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px
+}
+
+.LandingPageNavbar-sec2 a {
+    color: var(--blue_colour);
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px 2px
+}
+
+.LandingPageNavbar-sec2 a:hover {
+    border-bottom: 2px solid var(--blue_colour)
+}
+
+.LandingPageNavbar-sec3 {
+    display: flex;
+    gap: 10px;
+    margin-left: 24px
+}
+
+.LandingPageNavbarbutton {
+    padding: 10px 16px;
+    border-radius: 7px;
+    text-decoration: none;
+    font-weight: 800;
+    white-space: nowrap
+}
+
+.loginbutton {
+    border: 1px solid var(--blue_colour);
+    background: #fff;
+    color: var(--blue_colour)
+}
+
+.OpenAccountbutton {
+    border: 1px solid var(--blue_colour);
+    background: var(--blue_colour);
+    color: #fff
+}
+
+@media(max-width:950px) {
+    .LandingPageNavbar-sec2 {
+        display: none
+    }
+
+    .LandingPageNavbar-sec1 {
+        width: auto
+    }
+
+    .LandingPageNavbar-sec3 {
+        margin-left: auto
+    }
+}

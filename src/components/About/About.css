@@ -1,0 +1,473 @@
+/* =========================================
+   KUBHERA - ABOUT SECTION
+   Premium Digital Banking Style
+========================================= */
+
+.about-container {
+  height: 2000px;
+  margin: auto 8%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+/* =========================================
+   STICKY CONTAINER
+========================================= */
+
+.about-sticky {
+  position: sticky;
+  top: 100px;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+/* =========================================
+   MAIN ABOUT CONTAINER
+========================================= */
+
+.about-section {
+  width: 150px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+
+  background:
+    radial-gradient(
+      circle at 50% 20%,
+      rgba(255, 255, 255, 0.08),
+      transparent 45%
+    ),
+    linear-gradient(
+      145deg,
+      #111827,
+      #0b1220
+    );
+
+  box-sizing: border-box;
+
+  box-shadow:
+    0 30px 80px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+
+  will-change: width, height, border-radius;
+}
+
+
+/* =========================================
+   KUBHERA LOGO
+========================================= */
+
+.about-logo {
+  position: absolute;
+
+  top: 25%;
+  left: 50%;
+
+  width: 240px;
+  height: auto;
+
+  z-index: 5;
+
+  transform: translate(-50%, 0);
+
+  pointer-events: none;
+
+  will-change: transform;
+
+  filter:
+    drop-shadow(0 15px 30px rgba(0, 0, 0, 0.3));
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.about-content {
+  width: 100%;
+  height: 100%;
+
+  padding: 55px 60px;
+
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+
+  opacity: 0;
+
+  transform: translateY(40px);
+
+  will-change: opacity, transform;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.about-heading {
+  width: 100%;
+
+  text-align: center;
+
+  margin-bottom: 35px;
+}
+
+
+/* Main ABOUT heading */
+
+.about-heading h1 {
+  margin: 0 0 8px;
+
+  font-size: 52px;
+
+  font-weight: 800px;
+
+  letter-spacing: -2px;
+
+  line-height: 1;
+
+  font-family: var(--heading-font);
+
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #b9c7ff
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+/* Kubhera subtitle */
+
+.about-heading span {
+  display: block;
+
+  margin-bottom: 14px;
+
+  font-size: 12px;
+
+  font-weight: 800;
+
+  letter-spacing: 3px;
+
+  font-family: var(--heading-font);
+
+  color: #8ea2ff;
+}
+
+
+/* Description */
+
+.about-heading p {
+  max-width: 650px;
+
+  margin: auto;
+
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #b7c0d1;
+
+  font-family: var(--captions-font);
+}
+
+
+/* =========================================
+   CARDS WRAPPER
+========================================= */
+
+.cards-wrapper {
+  width: 100%;
+  /* height: 400px;
+  overflow: hidden; */
+
+  margin-top: 10px;
+}
+
+
+/* =========================================
+   CARDS CONTAINER
+========================================= */
+
+.about-cards {
+  width: max-content;
+  /* height: 250px; */
+  display: flex;
+  gap: 35px;
+  will-change: transform;
+}
+
+
+/* =========================================
+   INDIVIDUAL CARD
+========================================= */
+
+.about-card {
+  width: 280px;
+
+  height: 200px;
+
+  flex-shrink: 0;
+
+  padding: 25px;
+
+  box-sizing: border-box;
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+
+  border-radius: 20px;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255, 255, 255, 0.08),
+      rgba(255, 255, 255, 0.025)
+    );
+
+  box-shadow:
+    0 15px 35px rgba(0, 0, 0, 0.2);
+
+  backdrop-filter: blur(12px);
+
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    background 0.3s ease;
+}
+
+
+/* Card hover */
+
+.about-card:hover {
+  transform: translateY(-7px);
+
+  border-color: rgba(142, 162, 255, 0.5);
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(142, 162, 255, 0.12),
+      rgba(255, 255, 255, 0.035)
+    );
+}
+
+
+/* =========================================
+   CARD NUMBER
+========================================= */
+
+.card-number {
+  margin-bottom: 15px;
+
+  font-size: 13px;
+
+  font-weight: 800;
+
+  letter-spacing: 2px;
+
+  color: #8ea2ff;
+}
+
+
+/* =========================================
+   CARD TITLE
+========================================= */
+
+.about-card h3 {
+  margin: 0 0 10px;
+
+  font-family: var(--heading-font);
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  color: #ffffff;
+}
+
+
+/* =========================================
+   CARD DESCRIPTION
+========================================= */
+
+.about-card p {
+  margin: 0;
+
+  font-size: 15px;
+
+  line-height: 1.6;
+
+  color: #aeb8ca;
+
+  font-family: var(--captions-font);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+  .about-container {
+    margin: auto 5%;
+  }
+
+  .about-content {
+    padding: 40px;
+  }
+
+  .about-heading h1 {
+    font-size: 42px;
+  }
+
+  .about-heading p {
+    font-size: 14px;
+  }
+
+  .about-cards {
+    gap: 25px;
+  }
+
+  .about-card {
+    width: 260px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+  .about-container {
+    height: 1800px;
+
+    margin: auto 3%;
+  }
+
+  .about-sticky {
+    top: 70px;
+
+    height: 85vh;
+  }
+
+  .about-section {
+    width: 280px;
+
+    height: 280px;
+
+    border-radius: 50%;
+  }
+
+  .about-logo {
+    width: 150px;
+  }
+
+  .about-content {
+    padding: 30px 25px;
+  }
+
+  .about-heading {
+    margin-bottom: 25px;
+  }
+
+  .about-heading h1 {
+    font-size: 30px;
+
+    letter-spacing: -1px;
+  }
+
+  .about-heading span {
+    font-size: 8px;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+  }
+
+  .about-heading p {
+    font-size: 11px;
+
+    line-height: 1.55;
+  }
+
+  .about-cards {
+    gap: 20px;
+  }
+
+  .about-card {
+    width: 220px;
+
+    min-height: 160px;
+
+    padding: 20px;
+
+    border-radius: 16px;
+  }
+
+  .card-number {
+    font-size: 11px;
+
+    margin-bottom: 10px;
+  }
+
+  .about-card h3 {
+    font-size: 18px;
+
+    margin-bottom: 8px;
+  }
+
+  .about-card p {
+    font-size: 12px;
+
+    line-height: 1.5;
+  }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+  .about-section {
+    width: 250px;
+
+    height: 250px;
+  }
+
+  .about-content {
+    padding: 25px 20px;
+  }
+
+  .about-heading h1 {
+    font-size: 27px;
+  }
+
+  .about-heading p {
+    font-size: 10px;
+  }
+
+  .about-card {
+    width: 205px;
+
+    min-height: 150px;
+  }
+}
+

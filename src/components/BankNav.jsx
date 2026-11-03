@@ -1,0 +1,3 @@
+import {NavLink,Link,useNavigate} from 'react-router-dom';import {useAuth} from '../context/AuthContext';
+export default function BankNav(){const {user,logout}=useAuth();const nav=useNavigate();return <header className="bank-top"><Link className="brand" to="/dashboard">KUBHERA</Link><nav className="bank-nav"><NavLink to="/dashboard">Dashboard</NavLink><NavLink to="/transfer">Transfer</NavLink><NavLink to="/transactions">Transactions</NavLink><NavLink to="/profile">Profile</NavLink>{user?.role==='admin'&&<NavLink to="/admin">Admin</NavLink>}<button className="logout" onClick={()=>{logout();nav('/')}}>Logout</button></nav></header>}
+export function Layout({children}){return <div className="bank-layout"><BankNav/><main className="bank-main">{children}</main></div>}

@@ -1,0 +1,120 @@
+.banner {
+    width: 100%;
+    min-height: 700px;
+    background-image: url(../../assets/Banner/backdrop.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 400px 0px 200px inset ;
+}
+
+.bannerSection-1 {
+    width: 52%;
+    padding: 150px 0 60px 7%;
+    font-family: Arial, sans-serif
+}
+
+.eyebrow {
+    font-weight: 900;
+    letter-spacing: 2px;
+    color: #d3edf6
+}
+
+.bannerSection-1 h1 {
+    font-size: clamp(44px, 5.2vw, 72px);
+    line-height: 1.04;
+    margin: 16px 0;
+    color: #fff;
+    text-shadow: 1px 1px 5px #35a2cd
+}
+
+.bannerSection-1 p:not(.eyebrow) {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    max-width: 560px
+}
+
+.bannerSection-1 a {
+    display: inline-block;
+    margin: 24px 10px 0 0;
+    padding: 14px 22px;
+    border-radius: 7px;
+    font-weight: 900;
+    text-decoration: none
+}
+
+.OpenAccountButton {
+    background: #123f59;
+    color: #fff;
+    border: 1px solid #d8d8d8
+}
+
+.ExploreServiceButton {
+    background: #fff;
+    color: #123f59;
+    border: 1px solid #fff
+}
+
+.bannerSection-2 {
+    width: 48%;
+    display: flex;
+    align-items: end;
+    justify-content: center
+}
+
+.heroImage {
+    width: min(720px, 110%);
+    max-height: 610px;
+    object-fit: contain;
+    filter: drop-shadow(0 20px 30px #0006)
+}
+
+.landing-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    padding: 40px max(20px, 7%);
+    background: #fff
+}
+
+.landing-features div {
+    padding: 22px;
+    border: 1px solid #e2e9ed;
+    border-radius: 14px
+}
+
+.landing-features b,
+.landing-features span {
+    display: block
+}
+
+.landing-features b {
+    font-size: 18px;
+    color: #123f59;
+    margin-bottom: 8px
+}
+
+.landing-features span {
+    color: #657681
+}
+
+@media(max-width:800px) {
+    .banner {
+        min-height: 720px
+    }
+
+    .bannerSection-1 {
+        width: 100%;
+        padding: 130px 24px 30px
+    }
+
+    .bannerSection-2 {
+        display: none
+    }
+
+    .landing-features {
+        grid-template-columns: 1fr
+    }
+}
